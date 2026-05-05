@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Taste Hub | Premium Fast Food Lahore</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
-
 <body>
 
     <header>
         <nav>
             <div class="logo">City<span>Taste</span></div>
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#offers">Special Offers</a></li>
@@ -30,6 +30,7 @@
             </div>
         </nav>
     </header>
+
     <section class="hero" id="home">
         <video autoplay muted loop playsinline preload="auto" id="hero-video">
             <source src="videos/frying-video.mp4" type="video/mp4">
@@ -37,14 +38,14 @@
         <div class="hero-overlay">
             <div class="hero-content">
                 <h1 class="reveal">Experience Luxury <br> in Every Bite.</h1>
-                <p class="reveal">Premium ingredients meet organic hand-picked spices. <br> Delivered to your doorstep
-                    with care.</p>
+                <p class="reveal">Premium ingredients meet organic hand-picked spices. <br> Delivered to your doorstep with care.</p>
                 <div class="hero-btns reveal">
                     <a href="#order" class="btn-main">Online Order</a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="offers" id="offers">
         <div class="section-head reveal">
             <span>Exclusive Deals</span>
@@ -95,12 +96,12 @@
             </div>
         </div>
     </section>
+
     <section class="about" id="about">
         <div class="about-container reveal">
             <div class="about-text">
                 <h2>Purity is our Identity</h2>
-                <p>At City Taste Hub, we believe in the farm-to-table philosophy. 100% Organic vegetables and
-                    hand-ground spices are our secret.</p>
+                <p>At City Taste Hub, we believe in the farm-to-table philosophy. 100% Organic vegetables and hand-ground spices are our secret.</p>
                 <div class="organic-points">
                     <span>✔ Pure Desi Ghee</span>
                     <span>✔ No Artificial Colors</span>
@@ -122,6 +123,7 @@
             </div>
         </div>
     </section>
+
     <section class="order-section" id="order">
         <div class="section-head reveal">
             <span>Freshly Made</span>
@@ -157,8 +159,7 @@
             </div>
             <div class="form-group">
                 <label>Delivery Address</label>
-                <textarea name="Address" id="custAddress" placeholder="Enter your complete address in Lahore"
-                    required></textarea>
+                <textarea name="Address" id="custAddress" placeholder="Enter your complete address in Lahore" required></textarea>
             </div>
             <div class="form-row">
                 <div class="form-group">
@@ -173,56 +174,38 @@
                     </select>
                 </div>
             </div>
-            <div id="payDetails" class="pay-info"
-                style="display:none; background: #1a1a1a; padding: 20px; border-left: 4px solid #ff9f1c; margin-bottom: 20px;">
+            <div id="payDetails" class="pay-info" style="display:none;">
                 <p><strong>Transfer to:</strong> 0309 9091493 (Faisal)</p>
                 <p><strong>Available on:</strong> JazzCash, EasyPaisa, Nayapay, Sadapay</p>
-                <hr style="border: 0.5px solid #333; margin: 10px 0;">
-                <p style="color: #ff9f1c; font-weight: 600;">
+                <hr>
+                <p class="imp-note">
                     ⚠️ IMPORTANT: Please share your payment screenshot on this same WhatsApp number.
-                    Your order will be officially confirmed only after we receive and verify the screenshot.
                 </p>
             </div>
-            <p class="delivery-msg" style="color: #ff9f1c; font-size: 14px; margin-bottom: 20px; font-weight: 600;">
+            <p class="delivery-msg">
                 🚚 Estimated Delivery: Based on your distance from our Lahore outlet.
             </p>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <button type="submit" class="submit-btn"
-                    style="width: 100%; padding: 18px; background: #ffffff; color: #000; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; font-size: 18px;">
-                    Confirm via Email
-                </button>
-                <button type="button" onclick="sendWhatsApp()"
-                    style="width: 100%; padding: 18px; background: #25D366; color: #fff; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <div class="form-btns-container">
+                <button type="submit" class="submit-btn-email">Confirm via Email</button>
+                <button type="button" onclick="sendWhatsApp()" class="whatsapp-btn-order">
                     <i class="fab fa-whatsapp"></i> Order on WhatsApp
                 </button>
             </div>
         </form>
     </section>
 
-
     <footer id="contact">
-        <div class="footer-content reveal" id="contact">
-            <h2 style="color: var(--primary); margin-bottom: 20px;">Contact Us</h2>
-
-
-            <p style="margin-bottom: 15px;">
-                <i class="fas fa-map-marker-alt" style="color: #ff3d00; margin-right: 10px;"></i>
-                University of Lahore, Defence Road, Lahore.
-            </p>
-
-
-            <p style="margin-bottom: 15px;">
-                <a href="https://wa.me/923399110002" target="_blank" style="text-decoration: none; color: white;">
-                    <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 10px; font-size: 20px;"></i>
-                    WhatsApp: 0309 9091493
+        <div class="footer-content reveal">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> University of Lahore, Defence Road, Lahore.</p>
+            <p>
+                <a href="https://wa.me/923399110002" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp: 0309 9091493
                 </a>
             </p>
-
-
             <p>
-                <a href="tel:03399110002" style="text-decoration: none; color: white;">
-                    <i class="fas fa-phone-alt" style="color: #007bff; margin-right: 10px; font-size: 18px;"></i>
-                    Call: 0339 9110002
+                <a href="tel:03399110002">
+                    <i class="fas fa-phone-alt"></i> Call: 0339 9110002
                 </a>
             </p>
         </div>
@@ -232,5 +215,4 @@
     </footer>
 
 </body>
-
 </html>
