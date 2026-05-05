@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Taste Hub | Premium Fast Food Lahore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">City<span>Taste</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:03399110002" class="call-btn">Call Now</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline preload="auto" id="hero-video">
+            <source src="videos/frying-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="reveal">Experience Luxury <br> in Every Bite.</h1>
+                <p class="reveal">Premium ingredients meet organic hand-picked spices. <br> Delivered to your doorstep
+                    with care.</p>
+                <div class="hero-btns reveal">
+                    <a href="#order" class="btn-main">Online Order</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offers" id="offers">
+        <div class="section-head reveal">
+            <span>Exclusive Deals</span>
+            <h2>Our 6 Masterpieces</h2>
+        </div>
+        <div class="offer-grid">
+            <div class="offer-card floating reveal">
+                <img src="images/burger1.jfif" alt="Burger">
+                <div class="card-info">
+                    <h3>Royal Zinger</h3>
+                    <p>Rs 1200</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+            <div class="offer-card floating-alt reveal">
+                <img src="images/pizza1.jfif" alt="Pizza">
+                <div class="card-info">
+                    <h3>Cheese Pizza</h3>
+                    <p>Rs 1600</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+            <div class="offer-card floating reveal">
+                <img src="images/lavafries.jfif" alt="Fries">
+                <div class="card-info">
+                    <h3>Lava Fries</h3>
+                    <p>Rs 950</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+            <div class="offer-card floating-alt reveal">
+                <img src="images/shawrma.jfif" alt="Shawarma">
+                <div class="card-info">
+                    <h3>Organic Wrap</h3>
+                    <p>Rs 1100</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+            <div class="offer-card floating reveal">
+                <img src="images/chesepizza.jfif" alt="Platter">
+                <div class="card-info">
+                    <h3>Family Platter</h3>
+                    <p>Rs 3500</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+            <div class="offer-card floating-alt reveal">
+                <img src="images/steak.jfif" alt="Steak">
+                <div class="card-info">
+                    <h3>Grilled Steak</h3>
+                    <p>Rs 2500</p><a href="#order" class="order-btn-link">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container reveal">
+            <div class="about-text">
+                <h2>Purity is our Identity</h2>
+                <p>At City Taste Hub, we believe in the farm-to-table philosophy. 100% Organic vegetables and
+                    hand-ground spices are our secret.</p>
+                <div class="organic-points">
+                    <span>✔ Pure Desi Ghee</span>
+                    <span>✔ No Artificial Colors</span>
+                    <span>✔ Fresh Meat Daily</span>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>5k+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Organic Sauces</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600" alt="Interior">
+            </div>
+        </div>
+    </section>
+    <section class="order-section" id="order">
+        <div class="section-head reveal">
+            <span>Freshly Made</span>
+            <h2>Professional Order Form</h2>
+        </div>
+        <form action="https://formspree.io/f/xwvyvngb" method="POST" class="order-form reveal" id="orderForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="Customer Name" id="custName" placeholder="Faisal Ilyas" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="_replyto" id="custEmail" placeholder="faisal@example.com" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="Phone" id="custPhone" placeholder="0309 9091493" required>
+                </div>
+                <div class="form-group">
+                    <label>Select Item</label>
+                    <select name="Ordered Item" id="foodItem" required>
+                        <option value="Royal Zinger - Rs 1200">Royal Zinger - Rs 1200</option>
+                        <option value="Cheese Pizza - Rs 1600">Cheese Pizza - Rs 1600</option>
+                        <option value="Lava Fries - Rs 950">Lava Fries - Rs 950</option>
+                        <option value="Organic Wrap - Rs 1100">Organic Wrap - Rs 1100</option>
+                        <option value="Family Platter - Rs 3500">Family Platter - Rs 3500</option>
+                        <option value="Grilled Steak - Rs 2500">Grilled Steak - Rs 2500</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Delivery Address</label>
+                <textarea name="Address" id="custAddress" placeholder="Enter your complete address in Lahore"
+                    required></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="number" name="Quantity" id="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select name="Payment Method" id="payMethod" onchange="togglePay()" required>
+                        <option value="COD">Cash on Delivery (COD)</option>
+                        <option value="Online">Online Transfer (JazzCash/EasyPaisa)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="payDetails" class="pay-info"
+                style="display:none; background: #1a1a1a; padding: 20px; border-left: 4px solid #ff9f1c; margin-bottom: 20px;">
+                <p><strong>Transfer to:</strong> 0309 9091493 (Faisal)</p>
+                <p><strong>Available on:</strong> JazzCash, EasyPaisa, Nayapay, Sadapay</p>
+                <hr style="border: 0.5px solid #333; margin: 10px 0;">
+                <p style="color: #ff9f1c; font-weight: 600;">
+                    ⚠️ IMPORTANT: Please share your payment screenshot on this same WhatsApp number.
+                    Your order will be officially confirmed only after we receive and verify the screenshot.
+                </p>
+            </div>
+            <p class="delivery-msg" style="color: #ff9f1c; font-size: 14px; margin-bottom: 20px; font-weight: 600;">
+                🚚 Estimated Delivery: Based on your distance from our Lahore outlet.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button type="submit" class="submit-btn"
+                    style="width: 100%; padding: 18px; background: #ffffff; color: #000; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; font-size: 18px;">
+                    Confirm via Email
+                </button>
+                <button type="button" onclick="sendWhatsApp()"
+                    style="width: 100%; padding: 18px; background: #25D366; color: #fff; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </button>
+            </div>
+        </form>
+    </section>
+
+
+    <footer id="contact">
+        <div class="footer-content reveal" id="contact">
+            <h2 style="color: var(--primary); margin-bottom: 20px;">Contact Us</h2>
+
+
+            <p style="margin-bottom: 15px;">
+                <i class="fas fa-map-marker-alt" style="color: #ff3d00; margin-right: 10px;"></i>
+                University of Lahore, Defence Road, Lahore.
+            </p>
+
+
+            <p style="margin-bottom: 15px;">
+                <a href="https://wa.me/923399110002" target="_blank" style="text-decoration: none; color: white;">
+                    <i class="fab fa-whatsapp" style="color: #25D366; margin-right: 10px; font-size: 20px;"></i>
+                    WhatsApp: 0309 9091493
+                </a>
+            </p>
+
+
+            <p>
+                <a href="tel:03099091493" style="text-decoration: none; color: white;">
+                    <i class="fas fa-phone-alt" style="color: #007bff; margin-right: 10px; font-size: 18px;"></i>
+                    Call: 0339 9110002
+                </a>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 City Taste Hub | Designed by Faisal Ilyas</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
