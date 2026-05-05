@@ -402,6 +402,52 @@ img {
     transform: translateY(0);
 }
 
+@media screen and (max-width: 768px) {
+    
+
+    header {
+        padding: 10px 5%; 
+        position: relative; 
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        flex: none;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        flex: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-cta {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 95% !important;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    input, textarea, select {
+        width: 100% !important;
+        font-size: 16px; 
+        margin-bottom: 10px;
+    }
+}
 footer {
     padding: 80px 5%;
     background: black;
